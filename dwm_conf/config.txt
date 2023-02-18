@@ -1,0 +1,46 @@
+################################################################################
+Suckless
+
+$ sudo apt update
+
+$ sudo apt install libx11-dev libxinerama-dev libxft-dev
+
+         if needed  --     sharutils suckless-tools
+
+$ mkdir suckless
+
+$ cd suckless
+
+$ git clone https://git.suckless.org/dwm
+
+$ git clone https://git.suckless.org/st
+
+$ git clone https://git.suckless.org/dmenu
+
+################################################################################
+DWM
+
+$ cd dwm
+
+$ sudo make clean install
+
+$ sudo cp Desktop/dwmstart /usr/local/bin/
+
+$ sudo cp Desktop/dwm.desktop /usr/share/xsessions/
+
+
+################################################################################
+ST
+
+$ cd ../st
+
+$ sudo make clean install
+
+
+
+################################################################################
+DMENU
+
+$ cd ../dmenu/
+
+$ sudo make clean install
