@@ -75,12 +75,11 @@ static const char *term2cmd[]  = { "alacritty", NULL };
 static const char *webcmd[]  = { "firefox", NULL };
 static const char *web2cmd[]  = { "librewolf", NULL };
 
-
 static Key keys[] = {
     /* modifier                     key        function        argument */
     { MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
-    { MODKEY,                       XK_Return, spawn,          {.v = term2cmd } },
     { MODKEY,                       XK_t,      spawn,          {.v = termcmd } },
+    { MODKEY,                       XK_Return, spawn,          {.v = term2cmd } },
     { MODKEY,                       XK_w,      spawn,          {.v = webcmd } },
     { MODKEY,                       XK_l,      spawn,          {.v = web2cmd} },
     { MODKEY,                       XK_b,      togglebar,      {0} },
