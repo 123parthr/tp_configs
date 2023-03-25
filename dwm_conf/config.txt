@@ -28,6 +28,9 @@ $ sudo cp Desktop/dwmstart /usr/local/bin/
 
 $ sudo cp Desktop/dwm.desktop /usr/share/xsessions/
 
+--> patches
+      - focus on net active
+      - switch to tag
 
 ################################################################################
 ST
@@ -36,6 +39,8 @@ $ cd ../st
 
 $ sudo make clean install
 
+--> patch
+      - any size
 
 
 ################################################################################
