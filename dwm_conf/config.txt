@@ -1,51 +1,58 @@
 ################################################################################
-Suckless
+# Suckless Cloning
 
-$ sudo apt update
+sudo apt update
 
-$ sudo apt install libx11-dev libxinerama-dev libxft-dev
+sudo apt install libx11-dev libxinerama-dev libxft-dev
 
-         if needed  --     sharutils suckless-tools
+#         if needed  --     sharutils suckless-tools
 
-$ mkdir suckless
+mkdir suckless
 
-$ cd suckless
+cd suckless
 
-$ git clone https://git.suckless.org/dwm
+# Try and have your own git repo for these
 
-$ git clone https://git.suckless.org/st
+git clone https://git.suckless.org/dwm
 
-$ git clone https://git.suckless.org/dmenu
+git clone https://git.suckless.org/st
 
-################################################################################
-DWM
-
-$ cd dwm
-
-$ sudo make clean install
-
-$ sudo cp Desktop/dwmstart /usr/local/bin/
-
-$ sudo cp Desktop/dwm.desktop /usr/share/xsessions/
-
---> patches
-      - focus on net active
-      - switch to tag
+git clone https://git.suckless.org/dmenu
 
 ################################################################################
-ST
+# DWM
 
-$ cd ../st
+cd dwm
 
-$ sudo make clean install
+sudo make clean install
 
---> patch
-      - any size
+sudo cp Desktop/dwmstart /usr/local/bin/
+
+sudo cp Desktop/dwm.desktop /usr/share/xsessions/
+
+# --> patches
+#       - focus on net active
+#       - switch to tag
+
+# symlink config.def.h to the current directory after deleting the file
+
+sudo apt install redshift feh unclutter
+
+################################################################################
+# ST
+
+cd ../st
+
+sudo make clean install
+
+# --> patch
+#       - any size
 
 
 ################################################################################
-DMENU
+# DMENU
 
-$ cd ../dmenu/
+cd ../dmenu/
 
-$ sudo make clean install
+sudo make clean install
+
